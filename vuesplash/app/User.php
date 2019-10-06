@@ -14,6 +14,12 @@ class User extends Authenticatable
     protected $fillable = [
         'name', 'email', 'password',
     ];
+
+    /** JSONに含める属性 */
+    protected $visible = [
+        'name',
+    ];
+    
     /**
      * The attributes that should be hidden for arrays.
      *
